@@ -62,6 +62,7 @@ by pst-math.
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.tex
 #- source
 %doc %{_texmfdistdir}/source/generic/pstricks-add/Makefile
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -72,3 +73,5 @@ by pst-math.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
