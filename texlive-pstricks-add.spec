@@ -1,11 +1,11 @@
-# revision 23657
+# revision 24826
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pstricks-add
-# catalog-date 2011-08-22 10:11:29 +0200
+# catalog-date 2011-12-11 19:04:10 +0100
 # catalog-license lppl
-# catalog-version 3.54
+# catalog-version 3.55
 Name:		texlive-pstricks-add
-Version:	3.54
+Version:	3.55
 Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
@@ -18,8 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Collects together examples that have been posted to the
@@ -34,29 +32,27 @@ charts. The package makes use of PostScript routines provided
 by pst-math.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/dvips/pstricks-add/pstricks-add.pro
 %{_texmfdistdir}/tex/generic/pstricks-add/pstricks-add.tex
-%{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.cfg
 %{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.sty
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/Changes
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/README
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.bib
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.dat
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.pdf
