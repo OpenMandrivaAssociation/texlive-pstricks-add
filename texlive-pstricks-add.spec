@@ -31,16 +31,8 @@ differential equationd; - box plots; - matrix plots; and - pie
 charts. The package makes use of PostScript routines provided
 by pst-math.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -59,7 +51,6 @@ by pst-math.
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.tex
 #- source
 %doc %{_texmfdistdir}/source/generic/pstricks-add/Makefile
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -70,5 +61,3 @@ by pst-math.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
