@@ -1,12 +1,12 @@
-# revision 24826
+# revision 27836
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pstricks-add
-# catalog-date 2011-12-11 19:04:10 +0100
+# catalog-date 2012-09-28 14:00:56 +0200
 # catalog-license lppl
-# catalog-version 3.55
+# catalog-version 3.59
 Name:		texlive-pstricks-add
-Version:	3.55
-Release:	2
+Version:	3.59
+Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
