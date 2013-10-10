@@ -1,11 +1,11 @@
-# revision 27836
+# revision 31695
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pstricks-add
-# catalog-date 2012-09-28 14:00:56 +0200
+# catalog-date 2013-09-18 17:37:35 +0200
 # catalog-license lppl
-# catalog-version 3.59
+# catalog-version 3.61
 Name:		texlive-pstricks-add
-Version:	3.59
+Version:	3.61
 Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
@@ -13,7 +13,6 @@ URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks-add.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks-add.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks-add.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -43,21 +42,21 @@ by pst-math.
 %files
 %{_texmfdistdir}/dvips/pstricks-add/pstricks-add.pro
 %{_texmfdistdir}/tex/generic/pstricks-add/pstricks-add.tex
+%{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.cfg
 %{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.sty
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/Changes
+%doc %{_texmfdistdir}/doc/generic/pstricks-add/README
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.bib
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.dat
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.tex
-#- source
-%doc %{_texmfdistdir}/source/generic/pstricks-add/Makefile
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
