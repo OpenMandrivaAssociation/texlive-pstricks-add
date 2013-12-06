@@ -6,7 +6,7 @@
 # catalog-version 3.62
 Name:		texlive-pstricks-add
 Version:	3.62
-Release:	3
+Release:	4
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
