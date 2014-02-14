@@ -1,12 +1,12 @@
-# revision 32179
+# revision 32760
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pstricks-add
-# catalog-date 2013-11-15 07:22:56 +0100
+# catalog-date 2014-01-22 15:45:49 +0100
 # catalog-license lppl
-# catalog-version 3.62
+# catalog-version 3.65
 Name:		texlive-pstricks-add
-Version:	3.62
-Release:	5
+Version:	3.65
+Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
@@ -21,14 +21,13 @@ Requires(post):	texlive-kpathsea
 %description
 Collects together examples that have been posted to the
 pstricks mailing list, together with many additional features
-for the basic pstricks, pst-plot and pst-node, including: -
-bugfixes; - new options for the pspicture environment; -
-arrows; - braces as node connection/linestyle; - extended axes
-for plots (e.g., logarithm axes); - polar plots; - plotting
-tangent lines of curves or functions; - solving and printing
-differential equationd; - box plots; - matrix plots; and - pie
-charts. The package makes use of PostScript routines provided
-by pst-math.
+for the basic pstricks, pst-plot and pst-node, including:
+bugfixes; new options for the pspicture environment; arrows;
+braces as node connection/linestyle; extended axes for plots
+(e.g., logarithm axes); polar plots; plotting tangent lines of
+curves or functions; solving and printing differential
+equations; box plots; matrix plots; and pie charts. The package
+makes use of PostScript routines provided by pst-math.
 
 %post
     %{_sbindir}/texlive.post
