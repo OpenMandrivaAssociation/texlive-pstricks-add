@@ -6,7 +6,7 @@
 # catalog-version 3.73
 Name:		texlive-pstricks-add
 Version:	3.73
-Release:	2
+Release:	3
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
