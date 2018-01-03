@@ -1,12 +1,6 @@
-# revision 34298
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pstricks-add
-# catalog-date 2014-06-17 18:02:25 +0200
-# catalog-license lppl
-# catalog-version 3.73
 Name:		texlive-pstricks-add
-Version:	3.73
-Release:	4
+Version:	3.84
+Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
@@ -39,16 +33,10 @@ makes use of PostScript routines provided by pst-math.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/pstricks-add/pstricks-add.pro
-%{_texmfdistdir}/tex/generic/pstricks-add/pstricks-add.tex
-%{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.cfg
-%{_texmfdistdir}/tex/latex/pstricks-add/pstricks-add.sty
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/Changes
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/README
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.bib
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.dat
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks-add/pstricks-add-doc.tex
+%{_texmfdistdir}/dvips/pstricks-add
+%{_texmfdistdir}/tex/generic/pstricks-add
+%{_texmfdistdir}/tex/latex/pstricks-add
+%doc %{_texmfdistdir}/doc/generic/pstricks-add
 
 #-----------------------------------------------------------------------
 %prep
