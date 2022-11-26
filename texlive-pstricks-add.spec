@@ -1,5 +1,5 @@
 Name:		texlive-pstricks-add
-Version:	61407
+Version:	65067
 Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
