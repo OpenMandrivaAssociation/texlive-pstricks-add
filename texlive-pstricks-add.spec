@@ -1,6 +1,6 @@
 Name:		texlive-pstricks-add
-Version:	65067
-Release:	2
+Version:	66887
+Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
