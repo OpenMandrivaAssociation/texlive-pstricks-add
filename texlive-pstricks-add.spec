@@ -3,7 +3,7 @@ Version:	66887
 Release:	1
 Summary:	A collection of add-ons and bugfixes for PSTricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pstricks-add
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks-add.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks-add.doc.r%{version}.tar.xz
